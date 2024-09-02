@@ -12,6 +12,9 @@ import 'package:flutter_application_1/Pertemuan2/inputoperator.dart';
 import 'package:flutter_application_1/Pertemuan2/inputpage2.dart';
 import 'package:flutter_application_1/test.dart';
 import 'package:flutter_application_1/latihan/latihan1.dart';
+import 'pertemuan6/dialogpage.dart';
+import 'pertemuan6/snackbarpage.dart';
+import 'pertemuan6/latihan.dart';
 
 
 class hallo extends StatelessWidget {
@@ -218,6 +221,53 @@ class hallo extends StatelessWidget {
                             builder: (context) => Latihan1()));
                       },
                       child: Text("Halaman latihan 2")),
+                ),
+                ],),
+              
+              SizedBox(
+                  width: 10,
+                ),
+
+                Center(
+              child: Text("Pertemuan Ke 6"),
+            ),
+
+            Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                     Center(
+                  child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => Dialogpage()));
+                      },
+                      child: Text("Dialog Page")),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+
+                Center(
+                  child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => Snackbarpage()));
+                      },
+                      child: Text("SnackBar Page")),
+                ),
+
+                SizedBox(
+                  width: 10,
+                ),
+
+
+                Center(
+                  child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => Latihan()));
+                      },
+                      child: Text("latihan")),
                 ),
                 ],),
                    
