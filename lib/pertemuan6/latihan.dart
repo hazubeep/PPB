@@ -13,9 +13,17 @@ class Latihan extends StatelessWidget {
         backgroundColor: Colors.blue,
       ),
 
-      body:Row(
+      body:Column(
+        
         children: [
-        Container(
+          Center(
+            child: Text("Rumus Bangun datar"),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Center(
+                child: Container(
         margin: EdgeInsets.symmetric(horizontal: 10),
         width: 150,
         height: 150,
@@ -46,11 +54,14 @@ class Latihan extends StatelessWidget {
             ));
         }, child:Text("persegi")
          
-
+        )
         ),
-      ),
+              ),
+              
 
-      Container(
+
+      Center(
+        child:Container(
         margin: EdgeInsets.symmetric(horizontal: 10),
         width: 150,
         height: 150,
@@ -83,9 +94,11 @@ class Latihan extends StatelessWidget {
          
 
         ),
+      ), 
       ),
-
-      Container(
+      
+      Center(
+        child: Container(
         margin: EdgeInsets.symmetric(horizontal: 10),
         width: 150,
         height: 150,
@@ -120,8 +133,10 @@ class Latihan extends StatelessWidget {
 
         ),
       ),
-
-      Container(
+      ),
+      
+      Center(
+        child: Container(
         margin: EdgeInsets.symmetric(horizontal: 10),
         width: 150,
         height: 150,
@@ -156,7 +171,10 @@ class Latihan extends StatelessWidget {
         ),
       ),
 
-      Container(
+      ),
+      
+      Center(
+        child: Container(
         margin: EdgeInsets.symmetric(horizontal: 10),
         width: 150,
         height: 150,
@@ -187,13 +205,57 @@ class Latihan extends StatelessWidget {
             ));
         }, child:Text("Jajar genjang")  
          
-
         ),
       ),
 
-        ],
-      )
+      ),
       
+            ]
+             
+     ),
+
+     Center(
+            child: Text("Bangun ruang"),
+          ),
+
+    Column(
+      children: [
+        Container(
+          child: Text("Kubus"),
+          decoration: BoxDecoration(
+                  color: Colors.red,
+                  borderRadius: BorderRadius.circular(7.0),
+        ),
+        width: 250,
+        height: 150,
+        margin: EdgeInsets.symmetric(vertical: 10),
+        ),
+
+        Container(
+          child: Text("Balok"),
+          decoration: BoxDecoration(
+                  color: Colors.green,
+                  borderRadius: BorderRadius.circular(7.0),
+        ),
+        width: 250,
+        height: 150,
+        margin: EdgeInsets.symmetric(vertical: 10),
+        ),
+
+        Container(
+          child: Text("Bola"),
+          decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(7.0),
+        ),
+        width: 250,
+        height: 150,
+        margin: EdgeInsets.symmetric(vertical: 10),
+        )
+      ],
+    )
+        ],
+      ) 
     );
   }
 }
